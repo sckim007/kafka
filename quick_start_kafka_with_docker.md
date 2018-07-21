@@ -1,7 +1,6 @@
 <h1>Kafka Quick Start</h1>
 
-<h2>1. docker 및 docker-compose 설치<h2>
-
+<h2>1. docker 및 docker-compose 설치</h2>
 <pre>
 # apt-get install docker.io
 # apt-get install docker-compose
