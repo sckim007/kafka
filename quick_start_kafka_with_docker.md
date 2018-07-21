@@ -70,7 +70,7 @@ This is another message
 </pre>
 
 <h3>3.4 Topic 수신</h3>
-</pre>
+<pre>
 #bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test123 --from-beginning
 This is a message
 This is another message
