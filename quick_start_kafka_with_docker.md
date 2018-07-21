@@ -18,6 +18,7 @@
 # git clone https://github.com/wurstmeister/kafka-docker
 # cd kafka-docker
 # cat docker-compose-single-broker.yml
+<pre>
 version: '2'
 services:
   zookeeper:
@@ -33,6 +34,7 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+</pre>
 </pre>
 
 <h3>2.3 docker-compose 시작</h3>
@@ -55,7 +57,7 @@ services:
 # bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test123
 
 생성된 Topic 확인
-# bin/kafka-topics.sh --list --zookeeper localhost:2181
+#bin/kafka-topics.sh --list --zookeeper localhost:2181
 test		<== container실행시 사용한 Topic
 test123		<== 좀 전에 생성한 Topic
 </pre>
@@ -69,7 +71,7 @@ This is another message
 
 <h3>3.4 Topic 수신</h3>
 </pre>
-# bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test123 --from-beginning
+#bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test123 --from-beginning
 This is a message
 This is another message
 </pre>
