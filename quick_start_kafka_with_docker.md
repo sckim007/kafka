@@ -46,9 +46,8 @@ services:
 <pre>
 # wget wget http://apache.tt.co.kr/kafka/1.1.0/kafka_2.11-1.1.0.tgz
 # tar -xzf kafka_2.11-1.1.0.tgz
-
-# cd kafka_2.11-1.1.0/
-# apt install default-jre  <== kafka shell을 실행하기 위해 필요
+# cd kafka_2.11-1.1.0
+# apt install default-gre   <== kafka shell을 실행하기 위해 설치
 </pre>
 
 <h3>3.2 Topic 생성</h3>
